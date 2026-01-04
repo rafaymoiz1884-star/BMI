@@ -60,30 +60,22 @@
         .back-arrow {
             position: fixed;
             top: 0;
-            left: 0;
+            left: 10px;
             width: 45px;
             height: 45px;
             border: none;
-            background: #1DE88E;
-            color: black;
-            font-size: 22px;
+            background: black;
+            color: white;
             font-weight: bold;
+            border-radius: 8px;
             cursor: pointer;
             z-index: 9999;
         }
 
-        .back-arrow:hover {
-            background: #17c778;
-        }
     </style>
 </head>
 
 <body>
-
-    <div>
-        <a href=""><button class="back-btn">❮ </button></a>
-
-    </div>
 
     <div class="bmi-card">
 
@@ -98,7 +90,9 @@
         <button onclick="calculateBMI()">Calculate BMI</button>
 
         <div class="result" id="result"></div>
+        
     </div>
+    <a href="https://rafaymoiz1884-star.github.io/Portfolio_rafay1/"><button class="back-arrow" onclick="history.back()">❮</button></a>
 
     <script>
         function calculateBMI() {
